@@ -1,0 +1,37 @@
+.game-board {
+    display:grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows:repeat(3,100px);
+    padding-top: 10px;
+}
+.game-board div {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 48px;
+}
+
+.body {
+    
+    background-color: #86dffc;
+}
+
+.scores {
+    display: flex;
+}
+
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#reset {
+    background-color: antiquewhite;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 24px;
+}
