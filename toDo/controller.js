@@ -32,22 +32,22 @@ window.onclick = function(event) {
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     const formData = new FormData(form);
-    console.log(formData);
+    //console.log(formData);
 
     const data = {};
     formData.forEach((value, key) => {
         data[key] = value;
-        console.log(key);
-        console.log(value);
+        //console.log(key);
+        //console.log(value);
     });
 
-    console.log(data);
+    //console.log(data);
     let newItem = new Todo(data.title, data.dueDate, data.priority, data.notes)
     general.addToDo(newItem);
     if(newItem.title == "") {
       alert("Task needs a title");
     } else {
-      console.log(general.todos);
+      //console.log(general.todos);
       makeDiv(newItem);
       form.reset();
     }
@@ -64,9 +64,11 @@ function makeDiv(item) {
     let notes = document.createElement("div");
 
     title.textContent = "Task: " + item.title;
-    if (item.dueDate === undefined) {
+    if (item.dueDate === "") {
+        
       dueDate.textContent = item.dueDate;
     } else {
+        //console.log(item.dueDate);
       dueDate.textContent = "Due Date: " + item.dueDate;
     }
     
@@ -78,7 +80,7 @@ function makeDiv(item) {
     }
     //notes.textContent = item.details;
 
-    console.log(priority.textContent);
+    //console.log(priority.textContent);
     if (item.priority === "high") {
       priority.textContent = "Priority: " + item.priority;
       div.classList.add("high");
