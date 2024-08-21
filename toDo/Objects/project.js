@@ -19,8 +19,18 @@ class Project {
         return this.#todos;
     }
 
+    set todos(newList) {
+        return this.#todos;
+    }
+
     addToDo(item) {
         this.#todos.push(item);
+    }
+
+    removeToDo(title) {
+        this.#todos = this.#todos.filter(function(entry) {
+            return entry._title !== title;
+          });
     }
 }
 
