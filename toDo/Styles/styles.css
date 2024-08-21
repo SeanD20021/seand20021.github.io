@@ -1,0 +1,83 @@
+h1 {
+    background-color: #6482AD;
+    padding: 5px;
+    margin-bottom: -3px;
+    margin-top: -3px;
+    color: #222222;
+  }
+  
+  #formContainer {
+    padding: 10px;
+    background-color: #7FA1C3;
+    color: #111111;
+  }
+  
+  .layout {
+    margin:0px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start of the container */
+    justify-content: flex-start; /* Aligns items to the top without any gaps */
+    gap: 0; /* Ensures no gaps between the items */
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #555;
+    
+  }
+  
+  input[type=text] {
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
+  
+  input[type=date] {
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
+  
+  h4 {
+    margin-top: 3px;
+    margin-bottom: 7px
+  }
+  
+  #items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height: 100vh; 
+  }
+  
+  #items > div {
+    width: 60%; 
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 15px; 
+    box-sizing: border-box; 
+  }
+  
+  .high {
+    background-color: #f94449;
+    
+  }
+  
+  .medium {
+    background-color: #ffa500;
+  }
+  
+  .low {
+    background-color: #fCFc5c;
+  }
+  
+  .none {
+    background-color: #f0f0f0;
+  }
+  
+  .buttons {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
