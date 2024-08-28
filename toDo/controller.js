@@ -84,7 +84,7 @@ function makeDiv(item) {
     }
     
     priority.textContent = item._priority;
-    if (item._details === undefined) {
+    if (item._details === "") {
       notes.textContent = item._details;
     } else {
       notes.textContent = "Notes: " + item._details;

@@ -81,3 +81,7 @@ h1 {
     border-radius: 4px;
     background-color: #f0f0f0;
   }
+
+  .buttons:hover:not(.active){
+    background-color: #D8D8D8;
+}

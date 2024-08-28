@@ -28,17 +28,34 @@
     background-color: #ffefbf;
 }
 
+.button.op:hover:not(.active){
+    background-color: #E5D7AB;
+}
+
 .button.num {
     background-color: #6c9763;
+}
+
+.button.num:hover:not(.active){
+    background-color: #618759;
 }
 
 .button.misc{
     background-color: #a8c3a4;
 }
 
+.button.misc:hover:not(.active){
+    background-color: #97AF93;
+}
+
 .button.equal{
     background-color: #ffefbf;
 }
+
+.button.equal:hover:not(.active){
+    background-color: #E5D7AB;
+}
+
 .answer {
     border: 10px solid #0f3d0f;
     text-align: right;

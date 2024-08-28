@@ -30,8 +30,12 @@
 }
 
 #reset {
-    background-color: antiquewhite;
+    background-color: #faebd7;
     margin-top: 10px;
     padding: 5px;
     border-radius: 24px;
+}
+
+#reset:hover:not(.active){
+    background-color: #e1d3c1;
 }
